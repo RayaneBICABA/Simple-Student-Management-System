@@ -9,7 +9,7 @@ public class Main {
 
 
     // =====Methods Init=====
-    // Continue pro 
+    // Continue prog 
     static int continueProg(){
         Scanner sc = new Scanner(System.in);
         System.out.println("====== Welcome to Ravex Student Management System ==========");
@@ -41,7 +41,20 @@ public class Main {
 
     // =====Entry point=====
     public static void main(String[] args) {
-       
-        
+       int choice = continueProg();
+        do{
+
+            switch (choice) {
+                case 1:
+                    addStudent();
+                    break;
+                case 2:
+                    System.out.println(choice);
+                    break;
+                default:
+                    System.out.println("(*_*)! Invalid choice. Please try again.");
+                    break;
+            }
+        }while(choice != 7);
     }
 }
