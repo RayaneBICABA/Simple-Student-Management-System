@@ -10,7 +10,7 @@ public class Main {
 
     // FUNCTIONS CREATION
     // Add Student function
-    public static void addStudent() {
+    static void addStudent() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter student name:");
         String studentName = scanner.nextLine();
@@ -20,7 +20,7 @@ public class Main {
 
 
     // Display all student function
-
+    
 
     // Compute general average function
 
