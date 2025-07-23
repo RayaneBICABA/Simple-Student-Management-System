@@ -11,8 +11,11 @@ public class Main{
         int choice = sc.nextInt();
 
         // Add Student function
-        
+         
 
         // Display all student function
+
+
+        // Compute general average function
     }
 }
