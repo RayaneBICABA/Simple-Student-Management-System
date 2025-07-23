@@ -4,11 +4,13 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
+    // Global variable studentList
+    static ArrayList < String > studentList = new ArrayList<>();
+
 
     // FUNCTIONS CREATION
     // Add Student function
     public static void addStudent() {
-        ArrayList < String > studentList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter student name:");
         String studentName = scanner.nextLine();
