@@ -32,7 +32,12 @@ public class Main {
 
     // Display all
     static void displayAllStudent(){
-        System.out.println(studentList); // ArrayList display test
+       //Use a for loop to iterate the student list
+       //Student list size or length
+       int studentListLength = studentList.size();
+       for (int i = 0; i<studentListLength;i++){
+        System.out.println((i+1)+"- "+studentList.get(i));
+       }
     }
 
 
@@ -63,6 +68,7 @@ public class Main {
                     System.out.println(" Thanks for using Ravex Student Management System \n Bye!");
                     break;
                 default:
+                    System.out.println("\033c");
                     System.out.println("(*_*)! Invalid choice. Please try again.");
                     break;
             }
