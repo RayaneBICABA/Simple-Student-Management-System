@@ -31,5 +31,11 @@ public class Student {
         GeneralAverage = sum / marks.length;
         return GeneralAverage;
     }
+
+    //Setters
+    public void setName(String name){
+        this.name = name;
+    }
+
     
 }
