@@ -6,4 +6,12 @@ public class Student {
     double[] marks = new double[5];
     double GeneralAverage;
 
+
+    // Constructor
+    public Student(String name, double[] marks){
+        this.name = name;
+        this.marks = marks;
+    }
+
+    
 }
