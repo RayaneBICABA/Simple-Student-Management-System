@@ -1,7 +1,8 @@
 package com.ravex;
 
 public class Student {
-     // =================== ATTRIBUTES ===================
+     
+    // =================== ATTRIBUTES ===================
     String name;
     double[] marks = new double[5];
     double generalAverage;
@@ -11,7 +12,7 @@ public class Student {
     public Student(String name, double[] marks){
         this.name = name;
         this.marks = marks;
-        this.generalAverage = computeAverage();
+        this.generalAverage = computeGeneralAverage();
     }
 
     // =================== GETTERS ===================
@@ -40,5 +41,14 @@ public class Student {
 
     public void setMarks(double[] marks){
         this.marks = marks;
+    }
+
+    // =================== OTHER METHODS ===================
+    private double computeGeneralAverage() {
+        double sum = 0;
+        for (double mark : marks) {
+            sum += mark;
+        }
+        return sum / marks.length;
     }
 }
