@@ -18,4 +18,11 @@ public class Student {
         return name;
     }
 
+
+    public double[] getMarks(){
+        return marks;
+    }
+
+    
+
 }
