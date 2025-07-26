@@ -1,19 +1,20 @@
 package com.ravex;
 
 public class Student {
-    // Attributes
+     // =================== ATTRIBUTES ===================
     String name;
     double[] marks = new double[5];
     double GeneralAverage;
 
 
-    // Constructor
+    // =================== CONSTRUCTOR ===================
     public Student(String name, double[] marks){
         this.name = name;
         this.marks = marks;
+        this.generalAverage = computeAverage();
     }
 
-    // Getters
+    // =================== GETTERS ===================
     public String getName(){
         return name;
     }
@@ -32,7 +33,7 @@ public class Student {
         return GeneralAverage;
     }
 
-    //Setters
+    // =================== SETTERS ===================
     public void setName(String name){
         this.name = name;
     }
