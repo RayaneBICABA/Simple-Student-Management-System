@@ -23,6 +23,13 @@ public class Student {
         return marks;
     }
 
+    public double getGeneralAverage(){
+        double sum = 0;
+        for (double mark : marks) {
+            sum += mark;
+        }
+        GeneralAverage = sum / marks.length;
+        return GeneralAverage;
+    }
     
-
 }
