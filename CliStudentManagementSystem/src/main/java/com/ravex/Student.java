@@ -37,5 +37,7 @@ public class Student {
         this.name = name;
     }
 
-    
+    public void setMarks(double[] marks){
+        this.marks = marks;
+    }
 }
