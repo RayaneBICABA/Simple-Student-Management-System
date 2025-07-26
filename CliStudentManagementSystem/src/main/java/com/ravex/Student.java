@@ -4,7 +4,7 @@ public class Student {
      // =================== ATTRIBUTES ===================
     String name;
     double[] marks = new double[5];
-    double GeneralAverage;
+    double generalAverage;
 
 
     // =================== CONSTRUCTOR ===================
@@ -29,8 +29,8 @@ public class Student {
         for (double mark : marks) {
             sum += mark;
         }
-        GeneralAverage = sum / marks.length;
-        return GeneralAverage;
+        generalAverage = sum / marks.length;
+        return generalAverage;
     }
 
     // =================== SETTERS ===================
