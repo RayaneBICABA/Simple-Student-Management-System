@@ -13,5 +13,9 @@ public class Student {
         this.marks = marks;
     }
 
-    
+    // Getters
+    public String getName(){
+        return name;
+    }
+
 }
