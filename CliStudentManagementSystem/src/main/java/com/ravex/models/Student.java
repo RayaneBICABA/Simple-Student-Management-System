@@ -1,4 +1,4 @@
-package com.ravex;
+package com.ravex.models;
 
 public class Student {
      
