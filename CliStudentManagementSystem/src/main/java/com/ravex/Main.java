@@ -4,10 +4,6 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
-    // =====Global variables=====
-    static ArrayList < String > studentList = new ArrayList<>();
-
-
     // =====Methods Init=====
     // Continue prog 
     static int continueProg(){
@@ -18,15 +14,6 @@ public class Main {
 
         int choice = sc.nextInt();
         return choice;
-    }
-
-    // Add student 
-    static void addStudent() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter student name:");
-        String studentName = scanner.nextLine();
-        studentList.add(studentName);
-        System.out.println(studentName+" Add with success!");
     }
 
 

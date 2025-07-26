@@ -3,9 +3,9 @@ package com.ravex.models;
 public class Student {
      
     // =================== ATTRIBUTES ===================
-    String name;
-    double[] marks = new double[5];
-    double generalAverage;
+    private String name;
+    private double[] marks = new double[5];
+    private double generalAverage;
 
 
     // =================== CONSTRUCTOR ===================
