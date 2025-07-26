@@ -1,21 +1,20 @@
 package com.ravex.services;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.ravex.models.Student;
 
 public class StudentManager {
     // =================== Global variables ===================
-    
+    private List<Student> studentList = new ArrayList<>();
+
 
     // =================== Add student ===================
-    public void addStudent() {
-        //Create new student
-        Scanner scanner =  new Scanner(System.in);
-        System.out.print("Please enter student fullname: ");
-        String studentName = scanner.nextLine();
-        System.out.print("Please enter student marks: ");
-        Student newStudent = new Student(studentName, null)
+    public void addStudent(String name , double[] marks) {
+        Student newStudent = new Student(name, marks);
+        studentList.add(newStudent);
+        System.out.println(name + " added successfully!");
     }
 }

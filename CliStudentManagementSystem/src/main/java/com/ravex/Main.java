@@ -2,6 +2,8 @@ package com.ravex;
 
 import java.util.Scanner;
 import java.util.ArrayList;
+import com.ravex.models.Student;
+import com.ravex.services.StudentManager;
 
 public class Main {
     // =====Methods Init=====
