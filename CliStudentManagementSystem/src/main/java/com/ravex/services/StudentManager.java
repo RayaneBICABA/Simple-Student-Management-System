@@ -27,7 +27,13 @@ public class StudentManager {
             String studentName = student.getName();
             double studentGeneralAverage = student.getGeneralAverage();
             System.out.println(studentIndex+"- "+studentName+"---------"+studentGeneralAverage+"/20");
+            studentIndex++;
         }
       }
+    }
+
+    // =================== Get best student ===================
+    public void getBestStudent(){
+      
     }
 }

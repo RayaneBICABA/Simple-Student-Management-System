@@ -21,6 +21,7 @@ public class Main {
     // Add student
     static void addStudent(){
         System.out.print("Student name: ");
+        sc.nextLine(); // Consume newline left-over
         String studentName = sc.nextLine();
 
         System.out.print("How many marks do you want to enter for " + studentName + "? ");
@@ -64,7 +65,7 @@ public class Main {
                     System.out.print("\033c");
                     displayAllStudent();
                     break;
-                case 7:
+                case 6:
                     System.out.println(" Thanks for using Ravex Student Management System \n Bye!");
                     break;
                 default:
