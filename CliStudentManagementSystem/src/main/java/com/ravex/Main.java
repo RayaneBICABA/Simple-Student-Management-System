@@ -34,6 +34,16 @@ public class Main {
         studentManager.addStudent(studentName,marks);
 
     }
+
+    // Display all students
+    static void displayAllStudent(){
+        if(studentManager == null){
+            System.out.println("No Student Found!");
+        }else{
+            System.out.println("====== All Students ======");
+            studentManager.displayAllStudents();
+        }
+    }
     
     // =================== Entry point ===================
     public static void main(String[] args) {
