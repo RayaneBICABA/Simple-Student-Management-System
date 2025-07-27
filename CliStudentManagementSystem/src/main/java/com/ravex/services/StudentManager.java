@@ -34,6 +34,12 @@ public class StudentManager {
 
     // =================== Get best student ===================
     public void getBestStudent(){
-      
+      studentList.sort((s1, s2) -> Double.compare(s2.getGeneralAverage(), s1.getGeneralAverage()));
+      if(studentList.isEmpty()){
+        System.out.println("No Student Found!");
+      }else{
+        Student bestStudent = studentList.get(0);
+        System.out.println("Best Student: " + bestStudent.getName() + " with average " + bestStudent.getGeneralAverage() + "/20");
+      }
     }
 }
