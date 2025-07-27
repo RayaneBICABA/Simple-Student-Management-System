@@ -17,22 +17,7 @@ public class Main {
         int choice = sc.nextInt();
         return choice;
     }
-
-
-    // Display all
-    static void displayAllStudent(){
-       //Use a for loop to iterate the student list
-       //Student list size or length
-       int studentListLength = studentList.size();
-       for (int i = 0; i<studentListLength;i++){
-        System.out.println((i+1)+"- "+studentList.get(i));
-       }
-    }
-
-
-    // General average computation
-
-
+    
     // =====Entry point=====
     public static void main(String[] args) {
        int choice;

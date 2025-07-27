@@ -17,4 +17,18 @@ public class StudentManager {
         studentList.add(newStudent);
         System.out.println(name + " added successfully!");
     }
+
+    // =================== Display all students ===================
+    public void displayAllStudents(){
+      if(studentList.isEmpty()){
+        System.out.println("No Student Found!");
+      }else{
+        for(Student student:studentList){
+            int studentIndex = 1;
+            String studentName = student.getName();
+            double studentGeneralAverage = student.getGeneralAverage();
+            System.out.println(studentIndex+"- "+studentName+"---------"+studentGeneralAverage+"/20");
+        }
+      }
+    }
 }
