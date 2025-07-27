@@ -5,7 +5,7 @@ public class Student {
     // =================== ATTRIBUTES ===================
     private String name;
     private double[] marks;
-    private double generalAverage; 
+    private double generalAverage;
 
 
     // =================== CONSTRUCTOR ===================
