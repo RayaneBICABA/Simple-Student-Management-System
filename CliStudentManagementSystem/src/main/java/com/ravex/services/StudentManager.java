@@ -22,8 +22,8 @@ public class StudentManager {
       if(studentList.isEmpty()){
         System.out.println("No Student Found!");
       }else{
+        int studentIndex = 1;
         for(Student student:studentList){
-            int studentIndex = 1;
             String studentName = student.getName();
             double studentGeneralAverage = student.getGeneralAverage();
             System.out.println(studentIndex+"- "+studentName+"---------"+studentGeneralAverage+"/20");
