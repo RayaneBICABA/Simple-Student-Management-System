@@ -1,24 +1,41 @@
 package com.ravex;
 
 import java.util.Scanner;
-import java.util.ArrayList;
-import com.ravex.models.Student;
 import com.ravex.services.StudentManager;
 
 public class Main {
-    // =====Methods Init=====
+    // =================== StudentManager service instantiation ===================
+    static StudentManager studentManager = new StudentManager();
+    static Scanner sc = new Scanner(System.in);
+
+    // =================== METHODS ===================
     // Continue prog 
     static int continueProg(){
-        Scanner sc = new Scanner(System.in);
         System.out.println("====== Welcome to Ravex Student Management System ==========");
         System.out.println(" 1- Add Student \n 2- Display all students \n 3- Compute general average 4- Display the best student \n 5- Search student \n 6- Filter students \n 7- Exit");
         System.out.print("Choose:__");
 
-        int choice = sc.nextInt();
-        return choice;
+        return sc.nextInt();
+    }
+
+    // Add student
+    static void addStudent(){
+        System.out.print("Student name: ");
+        String studentName = sc.nextLine();
+
+        System.out.print("How many marks do you want to enter for " + studentName + "? ");
+        int numberOfMarks = sc.nextInt();
+        double[] marks = new double[numberOfMarks];
+        for(int i = 0; i<numberOfMarks;i++){
+            System.out.print("Mark "+(i+1)+": ");
+            marks[i] = sc.nextDouble();
+        }
+
+        studentManager.addStudent(studentName,marks);
+
     }
     
-    // =====Entry point=====
+    // =================== Entry point ===================
     public static void main(String[] args) {
        int choice;
         do{
@@ -29,8 +46,7 @@ public class Main {
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        System.err.println("Something interrupted the program. Try again later.");
                     }
                     System.out.print("\033c");
                     break;

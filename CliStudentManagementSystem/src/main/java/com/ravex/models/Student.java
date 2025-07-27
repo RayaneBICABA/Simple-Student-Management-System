@@ -4,8 +4,8 @@ public class Student {
      
     // =================== ATTRIBUTES ===================
     private String name;
-    private double[] marks = new double[5];
-    private double generalAverage;
+    private double[] marks;
+    private double generalAverage; 
 
 
     // =================== CONSTRUCTOR ===================
