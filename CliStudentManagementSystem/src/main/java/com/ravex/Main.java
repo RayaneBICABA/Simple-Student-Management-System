@@ -46,15 +46,7 @@ public class Main {
         }
     }
 
-    // Get best student
-    static void getBestStudent(){
-        if(studentManager == null){
-            System.out.println("No Student Found!");
-        }else{
-            System.out.println("====== Best Student ======");
-            studentManager.getBestStudent();
-        }
-    }
+   
     
     // =================== Entry point ===================
     public static void main(String[] args) {
@@ -74,10 +66,6 @@ public class Main {
                 case 2:
                     System.out.print("\033c");
                     displayAllStudent();
-                    break;
-                case 3:
-                    System.out.print("\033c");
-                    getBestStudent();
                     break;
                 case 6:
                     System.out.println(" Thanks for using Ravex Student Management System \n Bye!");
