@@ -46,6 +46,14 @@ public class Main {
         }
     }
 
+    // Get best student
+    static void getBestStudent(){
+        if(studentManager == null){
+            System.out.println("No Student Found");
+        }else{
+            studentManager.getBestStudent();
+        }
+    }
    
     
     // =================== Entry point ===================
