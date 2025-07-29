@@ -54,6 +54,19 @@ public class Main {
             studentManager.getBestStudent();
         }
     }
+
+    // Search student
+    static void searchStudent(){
+        System.out.print("Enter student name to search: ");
+        sc.nextLine(); // Consume newline left-over
+        String studentName = sc.nextLine();
+        
+        if(studentManager == null){
+            System.out.println("No Student Found!");
+        }else{
+            studentManager.searchStudent(studentName);
+        }
+    }
    
     
     // =================== Entry point ===================
@@ -78,6 +91,10 @@ public class Main {
                 case 3:
                     System.out.println("\033c");
                     getBestStudent();
+                    break;
+                case 4:
+                    System.out.println("\033c");
+                    searchStudent();
                     break;
                 case 6:
                     System.out.println(" Thanks for using Ravex Student Management System \n Bye!");
