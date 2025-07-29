@@ -75,6 +75,10 @@ public class Main {
                     System.out.print("\033c");
                     displayAllStudent();
                     break;
+                case 3:
+                    System.out.println("\033c");
+                    getBestStudent();
+                    break;
                 case 6:
                     System.out.println(" Thanks for using Ravex Student Management System \n Bye!");
                     break;
