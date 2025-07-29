@@ -44,29 +44,6 @@ public class StudentManager {
   }
 
   // =================== Search student ===================
-  public void searchStudent(String name) {
-    boolean found = false;
-
-    // Ligne d'en-tête du tableau
-    String leftAlignFormat = "| %-20s | %-7s |%n";
-    String line = "+----------------------+---------+";
-
-    for (Student student : studentList) {
-      if (student.getName().equalsIgnoreCase(name)) {
-        // Affichage du tableau avec un seul étudiant
-        System.out.println(line);
-        System.out.printf(leftAlignFormat, "Student", "Average");
-        System.out.println(line);
-        System.out.printf(leftAlignFormat, student.getName(), student.getGeneralAverage() + "/20");
-        System.out.println(line);
-        found = true;
-        break;
-      }
-    }
-
-    if (!found) {
-      System.out.println("No student with the name \"" + name + "\" was found.");
-    }
-  }
+  
 
 }
