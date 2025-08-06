@@ -51,6 +51,14 @@ public class StudentManager {
 
 
       // Found the highest average
+      double highestAverage = studentAverageList.get(0);
+      for(int i = 0; i< studentAverageList.size(); i++ ){
+        if(studentAverageList.get(i) > highestAverage){
+          highestAverage = studentAverageList.get(i);
+        }
+      }
+
+      System.out.println("The highest average is : "+highestAverage);
 
       // Collect the highest average index
 
