@@ -47,7 +47,9 @@ public class Main {
     }
 
     // =================== Get best student ===================
-
+    static void getBestStudent(){
+        studentManager.getBestStudent();
+    }
    
    
     
@@ -71,7 +73,9 @@ public class Main {
                     displayAllStudent();
                     break;
                 case 3:
-                    
+                    System.out.println("\033c");
+                    getBestStudent();
+                    break;
                 case 6:
                     System.out.println(" Thanks for using Ravex Student Management System \n Bye!");
                     break;

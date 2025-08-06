@@ -8,6 +8,8 @@ import com.ravex.models.Student;
 public class StudentManager {
   // =================== Global variables ===================
   private final List<Student> studentList = new ArrayList<>();
+  
+  
 
   // =================== Add student ===================
   public void addStudent(String name, double[] marks) {
@@ -32,6 +34,26 @@ public class StudentManager {
   }
 
   // =================== Get best student ===================
- 
+  public void getBestStudent(){
+    // Check if the list is empty 
+    if (studentList.isEmpty()){
+      System.out.println("No student found!");
+    }else{
+      // Create empty list
+      ArrayList<Double> studentAverageList = new ArrayList<>();
+      
+      // Collect all student average
+      
+
+
+      // Found the highest average
+
+      // Collect the highest average index
+
+      // Found the student with the same index
+
+      // Display the best student name and his average
+    }
+  }
 
 }
