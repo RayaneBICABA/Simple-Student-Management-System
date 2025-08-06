@@ -43,7 +43,11 @@ public class StudentManager {
       ArrayList<Double> studentAverageList = new ArrayList<>();
       
       // Collect all student average
-      
+      int studentListSize = studentList.size();
+      System.out.println(studentListSize);
+      for(int i = 0; i < studentListSize; i++){
+        studentAverageList.add(studentList.get(i).getGeneralAverage());
+      }
 
 
       // Found the highest average
