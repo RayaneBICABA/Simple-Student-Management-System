@@ -50,6 +50,11 @@ public class Main {
     static void getBestStudent(){
         studentManager.getBestStudent();
     }
+
+    //  =================== Update student ===================
+    static void  updateStudent(){
+
+    }
    
    
     
@@ -75,6 +80,10 @@ public class Main {
                 case 3:
                     System.out.println("\033c");
                     getBestStudent();
+                    break;
+                case 4:
+                    System.out.println("\033c");
+                    updateStudent();
                     break;
                 case 6:
                     System.out.println(" Thanks for using Ravex Student Management System \n Bye!");
