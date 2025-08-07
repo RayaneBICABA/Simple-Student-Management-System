@@ -12,7 +12,7 @@ public class Main {
     // Continue prog 
     static int continueProg(){
         System.out.println("====== Welcome to Ravex Student Management System ==========");
-        System.out.println(" 1- Add Student \n 2- Display all students \n 3- Display the best student \n 4- Search student \n 5- Filter students \n 6- Exit");
+        System.out.println(" 1- Add Student \n 2- Display all students \n 3- Display the best student \n 4- Update student \n 5- Delete student \n 6- Exit");
         System.out.print("Choose:__");
 
         return sc.nextInt();
