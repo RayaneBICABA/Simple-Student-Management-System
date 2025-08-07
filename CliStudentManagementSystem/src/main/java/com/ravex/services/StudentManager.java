@@ -42,7 +42,6 @@ public class StudentManager {
 
       // Collect all student average
       int studentListSize = studentList.size();
-      System.out.println(studentListSize);
       for (int i = 0; i < studentListSize; i++) {
         studentAverageList.add(studentList.get(i).getGeneralAverage());
       }
@@ -56,9 +55,9 @@ public class StudentManager {
           highestIndex = i;
         }
       }
-      System.out.println("The highest average is : " + highestAverage+ "\n The index is: "+highestIndex);
 
       // Display the best student name and his average
+       System.out.println("====== BEST STUDENT ====== \n"+ studentList.get(highestIndex).getName()+"---------"+ highestAverage+"/20");
     }
   }
 
