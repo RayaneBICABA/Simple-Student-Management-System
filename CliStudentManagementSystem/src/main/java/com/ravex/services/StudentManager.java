@@ -8,8 +8,6 @@ import com.ravex.models.Student;
 public class StudentManager {
   // =================== Global variables ===================
   private final List<Student> studentList = new ArrayList<>();
-  
-  
 
   // =================== Add student ===================
   public void addStudent(String name, double[] marks) {
@@ -34,35 +32,31 @@ public class StudentManager {
   }
 
   // =================== Get best student ===================
-  public void getBestStudent(){
-    // Check if the list is empty 
-    if (studentList.isEmpty()){
+  public void getBestStudent() {
+    // Check if the list is empty
+    if (studentList.isEmpty()) {
       System.out.println("No student found!");
-    }else{
+    } else {
       // Create empty list
       ArrayList<Double> studentAverageList = new ArrayList<>();
-      
+
       // Collect all student average
       int studentListSize = studentList.size();
       System.out.println(studentListSize);
-      for(int i = 0; i < studentListSize; i++){
+      for (int i = 0; i < studentListSize; i++) {
         studentAverageList.add(studentList.get(i).getGeneralAverage());
       }
 
-
       // Found the highest average
       double highestAverage = studentAverageList.get(0);
-      for(int i = 0; i< studentAverageList.size(); i++ ){
-        if(studentAverageList.get(i) > highestAverage){
+      int highestIndex = 0;
+      for (int i = 0; i < studentAverageList.size(); i++) {
+        if (studentAverageList.get(i) > highestAverage) {
           highestAverage = studentAverageList.get(i);
+          highestIndex = i;
         }
       }
-
-      System.out.println("The highest average is : "+highestAverage);
-
-      // Collect the highest average index
-
-      // Found the student with the same index
+      System.out.println("The highest average is : " + highestAverage+ "\n The index is: "+highestIndex);
 
       // Display the best student name and his average
     }
