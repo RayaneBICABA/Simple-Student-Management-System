@@ -61,4 +61,20 @@ public class StudentManager {
     }
   }
 
+
+  // =================== Update student ===================
+  public void updateStudent(int studentId){
+    //Check if the id exist
+    if(studentList.get(studentId-1) == null){
+      System.out.println("Student Not Found!");
+    }else{
+      System.out.println(studentId+"-"+studentList.get(studentId-1).getName()+"-------"+studentList.get(studentId-1).getGeneralAverage()+"/20");
+    }
+    // Collect student to update id / index
+    
+    // Collect new name and new average (number of marks, marks)
+
+    // Confirm student update
+  }
+
 }

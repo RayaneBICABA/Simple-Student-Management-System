@@ -53,7 +53,9 @@ public class Main {
 
     //  =================== Update student ===================
     static void  updateStudent(){
-
+        System.out.println("Please enter the id of the student you want to update: ");
+        int studentId = sc.nextInt();
+        studentManager.updateStudent(studentId);
     }
    
    
